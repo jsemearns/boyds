@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Boyd's Management App</title>
+	</head>
+	<body>
+		<div class="login-form-container">
+			<form method="POST" action=".">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<input type="submit" />
+			</form>
+		</div>
+	</body>
+</html>
